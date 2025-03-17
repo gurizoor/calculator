@@ -1,0 +1,20 @@
+
+- index.html
+    ↓
+    <head>
+        <base data-trunk-public-url/>
+    </head>
+
+
+- bash(powershell)
+    ↓
+    trunk build --release --public-url [project name]
+    [project name] = /calculator/
+
+
+- github pages
+    ↓
+    ブランチはmaster, フォルダーはdocsに設定しておく。
+    trunk build ~で生成されたファイルたち(distフォルダーに生成されたもの)をdocsフォルダーに移動させておく。
+
+    あとは普通にデプロイすれば完了。

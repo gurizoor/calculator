@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <base href="/calculator/" />
+<link rel="modulepreload" href="/calculator/calculator-9bd71c8f3d1df1b7.js" crossorigin=anonymous integrity="sha384-LMKuG5ZMW9MWbyBpi6+R3e3dkduVggrqJrmnJTpERWzgifZC31riz07K5r/XK8ax"><link rel="preload" href="/calculator/calculator-9bd71c8f3d1df1b7_bg.wasm" crossorigin=anonymous integrity="sha384-O6LW6ZLl/OTnb5/iv7Ua70Ny3KzMaLVJS9vULVYeh7BnKpeBFqBjsB5ThcQdWUYl" as="fetch" type="application/wasm"></head>
+<body>
+    
+
+<script type="module" nonce="0sGom7Y/LxlR8VoCyXyX0A==">
+import init, * as bindings from '/calculator/calculator-9bd71c8f3d1df1b7.js';
+const wasm = await init({ module_or_path: '/calculator/calculator-9bd71c8f3d1df1b7_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
