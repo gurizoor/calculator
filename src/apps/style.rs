@@ -22,15 +22,16 @@ pub fn global_style() -> StyleSource {
 pub fn input_button() -> Style {
     style!(r#"
         margin: 8px;
-        width: 60px;
+        width: 50px;
         font-size: 50px;
         box-sizing: border-box;
         background-color: rgb(255, 255, 255);
-        border-radius: 50px;
+        border-radius: 500px;
         border: 0px;
         color: rgb(0, 0, 0);
         box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2);
         border-bottom: solid 4px rgb(155, 155, 155);
+        cursor: pointer;
 
         &:hover {
             transform: translateY(2px);
@@ -54,7 +55,7 @@ pub fn display_style() -> Style {
         padding-right: 20px;
         padding-top: 0px;
         padding-bottom: 20px;
-        width: 290px;
+        width: 240px;
         height: 70px;
         text-align: right;
         font-size: 60px;
@@ -71,9 +72,15 @@ pub fn calculator_style() -> Style{
         margin: 0.1px;
         padding: 30px;
         border-radius: 50px;
-        width: 310px;
+        width: 270px;
         height: 500px;
         background: rgb(255, 255, 255, 0.6);
         box-shadow: 10px 10px 100px 0px rgba(0, 0, 0, 0.2);
+    "#).unwrap()
+}
+
+pub fn not_line_break_style() -> Style {
+    style!(r#"
+        white-space: nowrap;
     "#).unwrap()
 }

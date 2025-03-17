@@ -7,6 +7,7 @@ pub fn app() -> Html {
 
     // styles
     let input_button = classes!(input_button());
+    let not_line_break = classes!(not_line_break_style());
     html! {
         <div>
             <Global css={global_style()}/>
@@ -16,7 +17,7 @@ pub fn app() -> Html {
                     {calculation.display.clone()}
                 </div>
                 <div>
-                    <div>
+                    <div class={not_line_break.clone()}>
                         <button class={input_button.clone()} onclick={let calculation = calculation.clone();
                             move |_| calculation.set(calculation.input(7.0))
                         }>{"7"}</button>
@@ -30,7 +31,7 @@ pub fn app() -> Html {
                             move |_| calculation.set(calculation.input(15.0))
                         }>{"÷"}</button>
                     </div>
-                    <div>
+                    <div class={not_line_break.clone()}>
                         <button class={input_button.clone()} onclick={let calculation = calculation.clone();
                             move |_| calculation.set(calculation.input(4.0))
                         }>{"4"}</button>
@@ -44,7 +45,7 @@ pub fn app() -> Html {
                             move |_| calculation.set(calculation.input(14.0))
                         }>{"×"}</button>
                     </div>
-                    <div>
+                    <div class={not_line_break.clone()}>
                         <button class={input_button.clone()} onclick={let calculation = calculation.clone();
                             move |_| calculation.set(calculation.input(1.0))
                         }>{"1"}</button>
@@ -58,7 +59,7 @@ pub fn app() -> Html {
                             move |_| calculation.set(calculation.input(13.0))
                         }>{"-"}</button>
                     </div>
-                    <div>
+                    <div class={not_line_break.clone()}>
                         <button class={input_button.clone()} onclick={let calculation = calculation.clone();
                             move |_| calculation.set(calculation.input(10.0))
                         }>{"C"}</button>

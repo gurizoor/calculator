@@ -11,12 +11,17 @@
     trunk build --release --public-url [project name]
     [project name] = /calculator/
 
-    example trunk build --release --public-url /calculator/
+    example → trunk build --release --public-url /calculator/
 
 
 - github pages
     ↓
     ブランチはmaster, フォルダーはdocsに設定しておく。
-    trunk build ~で生成されたファイルたち(distフォルダーに生成されたもの)をdocsフォルダーに移動させておく。
+    rootにTrunk.tomlを作成して
+        [build]
+        target = "index.html"
+        dist = "docs"
+    と記述しておく。
+    (または、trunk build ~で生成されたファイルたち(distフォルダーに生成されたもの)をdocsフォルダーに移動させておく。)
 
     あとは普通にデプロイすれば完了。
