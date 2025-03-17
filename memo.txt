@@ -11,6 +11,8 @@
     trunk build --release --public-url [project name]
     [project name] = /calculator/
 
+    example trunk build --release --public-url /calculator/
+
 
 - github pages
     ↓

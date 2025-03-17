@@ -21,17 +21,12 @@ pub fn global_style() -> StyleSource {
 
 pub fn input_button() -> Style {
     style!(r#"
-        margin-top: 0.4vh;
-        margin-bottom: 0.4vh;
-        margin-left: 0.4vh;
-        margin-right: 0.4vh;
-        padding-bottom: 1.7vw;
-        padding-top: 1.7vh;
-        width: 10vh;
-        font-size: 6vh;
+        margin: 8px;
+        width: 60px;
+        font-size: 50px;
         box-sizing: border-box;
         background-color: rgb(255, 255, 255);
-        border-radius: 5vh;
+        border-radius: 50px;
         border: 0px;
         color: rgb(0, 0, 0);
         box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2);
@@ -52,19 +47,19 @@ pub fn input_button() -> Style {
 
 pub fn display_style() -> Style {
     style!(r#"
-        margin-top: 0.4vh;
-        margin-bottom: 5vh;
-        margin-left: 0.4vh;
-        margin-right: 0.4vh;
-        padding-right: 2vh;
-        padding-top: 1vh;
-        padding-bottom: 3vh;
-        width: 40vh;
-        height: 7vh;
+        margin-top: 0px;
+        margin-bottom: 40px;
+        margin-left: 0x;
+        margin-right: 0px;
+        padding-right: 20px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        width: 290px;
+        height: 70px;
         text-align: right;
-        font-size: 6vh;
+        font-size: 60px;
         border: 0px;
-        border-radius: 2.5vh;
+        border-radius: 20px;
         background-color: rgb(255, 255, 255);
         border-bottom: solid 3px rgb(155, 155, 155);
         box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2);
@@ -73,11 +68,11 @@ pub fn display_style() -> Style {
 
 pub fn calculator_style() -> Style{
     style!(r#"
-        margin: 0.1vh;
-        padding: 3vh;
-        border-radius: 5vh;
-        width: 44vh;
-        height: 65vh;
+        margin: 0.1px;
+        padding: 30px;
+        border-radius: 50px;
+        width: 310px;
+        height: 500px;
         background: rgb(255, 255, 255, 0.6);
         box-shadow: 10px 10px 100px 0px rgba(0, 0, 0, 0.2);
     "#).unwrap()
