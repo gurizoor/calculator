@@ -22,7 +22,7 @@ pub fn input_button() -> Style {
     style!(r#"
         margin: 8px;
         width: 40px;
-        font-size: 50px;
+        font-size: 35px;
         box-sizing: border-box;
         background-color: rgb(255, 255, 255);
         border-radius: 500px;
@@ -48,16 +48,16 @@ pub fn input_button() -> Style {
 pub fn display_style() -> Style {
     style!(r#"
         margin-top: 0px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         margin-left: 0x;
         margin-right: 0px;
         padding-right: 20px;
         padding-top: 0px;
         padding-bottom: 20px;
-        width: 240px;
-        height: 70px;
+        width: 220px;
+        height: 45px;
         text-align: right;
-        font-size: 60px;
+        font-size: 45px;
         border: 0px;
         border-radius: 20px;
         background-color: rgb(255, 255, 255);
@@ -68,11 +68,11 @@ pub fn display_style() -> Style {
 
 pub fn calculator_style() -> Style{
     style!(r#"
-        margin: 0.1px;
-        padding: 30px;
+        margin: 0px;
+        padding: 0px;
         border-radius: 50px;
-        width: 300px;
-        height: 550px;
+        width: 350px;
+        height: 500px;
         background: rgb(255, 255, 255, 0.6);
         box-shadow: 10px 10px 100px 0px rgba(0, 0, 0, 0.2);
         display: flex;
