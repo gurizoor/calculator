@@ -13,7 +13,6 @@ pub fn global_style() -> StyleSource {
                 height: 100vh;
                 margin: 0;
                 padding: 0;
-                overflow: hidden;
             }
         "#
     )
@@ -22,7 +21,7 @@ pub fn global_style() -> StyleSource {
 pub fn input_button() -> Style {
     style!(r#"
         margin: 8px;
-        width: 50px;
+        width: 40px;
         font-size: 50px;
         box-sizing: border-box;
         background-color: rgb(255, 255, 255);
@@ -72,10 +71,14 @@ pub fn calculator_style() -> Style{
         margin: 0.1px;
         padding: 30px;
         border-radius: 50px;
-        width: 270px;
-        height: 500px;
+        width: 300px;
+        height: 550px;
         background: rgb(255, 255, 255, 0.6);
         box-shadow: 10px 10px 100px 0px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     "#).unwrap()
 }
 
